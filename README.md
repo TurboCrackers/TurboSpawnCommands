@@ -1,2 +1,2 @@
 # TurboSpawnCommand
-A *very* simple /spawn command.
+This is a Minecraft Forge mod that adds lightweight spawn commands.
