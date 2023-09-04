@@ -23,7 +23,7 @@ public class ModCommands {
         LiteralArgumentBuilder<CommandSourceStack> spawn_command = literal("spawn").executes(ModCommands::execSpawnCommand);
         dispatcher.register(spawn_command);
 
-        LiteralArgumentBuilder<CommandSourceStack> set_spawn_command = literal("setspawn").executes(ModCommands::execSetSpawnCommand);
+        LiteralArgumentBuilder<CommandSourceStack> set_spawn_command = literal("setspawn").executes(ModCommands::execSetSpawnCommand).requires((source) -> source.hasPermission(3));
         dispatcher.register(set_spawn_command);
     }
 
